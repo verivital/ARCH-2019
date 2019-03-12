@@ -28,8 +28,10 @@ https://github.com/onnx/onnx.
 
 #### Author
 
-Diego Manzanas Lopez
+1. Diego Manzanas Lopez
+2. Patrick Musau
 
 #### Contact
 
 diego.manzanas.lopez@vanderbilt.edu
+patrick.musau@vanderbilt.edu
