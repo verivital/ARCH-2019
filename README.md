@@ -17,7 +17,7 @@ clicking on the <b> PLAY </b> button.
 ### Plant files
 
 In the main folder for each benchmark there is a dynamics.m file that contains the differential equations that define this particular system.
-as well as the SpaceEx formats for the plants. 
+as well as the SpaceEx (cfg and xml files) formats for the plants. 
 
 ### Controller files
 
