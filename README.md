@@ -22,12 +22,11 @@ MATLAB R2018b
 
 In the main folder for each benchmark we find a simulink model "xxxxxx".slx that contains the neural network 
 controller (Simulink block), and the system's plant (Stateflow block). This is the file we will use to simulate the system by simply
-clicking on the <b> PLAY </b> button.
+clicking on the <b> PLAY </b> button. All the simulations has an initial state point chosen from the initial state sets described in the paper.
 
 ### Plant files
 
-In the main folder for each benchmark there is a dynamics.m file that contains the differential equations that define this particular system.
-as well as the SpaceEx (cfg and xml files) formats for the plants. 
+In the main folder for each benchmark there is a dynamics.m file that contains the differential equations that define this particular system, as well as the SpaceEx (cfg and xml files) formats for the plants. 
 
 ### Controller files
 
