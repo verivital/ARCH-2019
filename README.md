@@ -11,9 +11,11 @@ https://github.com/souradeep-111/Neural-Network-Controller-Verification-Benchmar
 ### Requirements
 
 MATLAB R2018b 
-Markup: * Simulink
-        * Stateflow
-        * Deep Learning Toolbox
+
+Markup: 
+       * Simulink
+       * Stateflow
+       * Deep Learning Toolbox
 
 ### Simulation files
 
