@@ -8,6 +8,13 @@ addition to the benchmarks previously presented by Souradeep Duta and tested usi
 Reachability Analysis for Neural Feedback Systems using Regressive Polynomial Rule Inference, </i> by Souradeep Dutta, Xin Chen and Sriram Sankaranarayanan HSCC 2019, Montreal, Canada 
 https://github.com/souradeep-111/Neural-Network-Controller-Verification-Benchmarks-HSCC-2019. 
 
+### Requirements
+
+MATLAB R2018b 
+Markup: * Simulink
+        * Stateflow
+        * Deep Learning Toolbox
+
 ### Simulation files
 
 In the main folder for each benchmark we find a simulink model "xxxxxx".slx that contains the neural network 
