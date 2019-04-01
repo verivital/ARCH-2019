@@ -3,7 +3,11 @@ function [dx] = dynamicsMC(t,x,u)
 % x(1) = position
 % x(2) = velocity
 
-dx(1,1) = x(2);
-dx(2,1) = 0.0015*u-0.0025*cos(3*x(1));
+% Originally the discrete dynamics were taken from here
+% https://perma.cc/6Z2N-PFWC, where the time step is 0.5 seconds
+% So, we need to divide our dynamics by 0.5 to have them in continuous time
+
+dx(1,1) = 2*x(2);
+dx(2,1) = 0.003*u-0.005*cos(3*x(1));
 end
 
