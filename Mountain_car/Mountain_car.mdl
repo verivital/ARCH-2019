@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.17"
+    ComputedModelVersion    "1.19"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -320,9 +320,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "manzand"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Apr 01 12:38:58 2019"
-  RTWModifiedTimeStamp	  476022902
-  ModelVersionFormat	  "1.%<AutoIncrement:17>"
+  LastModifiedDate	  "Thu Apr 11 12:30:55 2019"
+  RTWModifiedTimeStamp	  476886645
+  ModelVersionFormat	  "1.%<AutoIncrement:19>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -380,7 +380,7 @@ Model {
     $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "Mountain_car"
-    overrideMode_	    [0U]
+    overrideMode_	    [0.0]
     Array {
       Type		      "Cell"
       Dimension		      1
@@ -435,7 +435,7 @@ Model {
 	  DisabledProps		  []
 	  Description		  ""
 	  StartTime		  "0.0"
-	  StopTime		  "50"
+	  StopTime		  "100"
 	  AbsTol		  "auto"
 	  AutoScaleAbsTol	  on
 	  FixedStep		  "0.005"
@@ -4850,15 +4850,15 @@ Model {
       ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
       "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData3'),extmgr.Configuration('Visuals','Time Domain"
-      "',true,'SerializedDisplays',{struct('MinYLimReal','-1.24947','MaxYLimReal','1.15333','YLabelReal','','MinYLimMag"
-      "','0.00000','MaxYLimMag','1.24947','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'Axes"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','-1.24991','MaxYLimReal','1.15654','YLabelReal','','MinYLimMag"
+      "','0.00000','MaxYLimMag','1.24991','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'Axes"
       "Color',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.06666"
       "66666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.8313"
       "72549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686"
       " 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines"
       "',1,'LineNames',{{'Mountain Car Plant1/p_out'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',str"
-      "uct('MinYLimReal','-1.24947','MaxYLimReal','1.15333','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.2494"
-      "7','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',["
+      "uct('MinYLimReal','-1.24991','MaxYLimReal','1.15654','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.2499"
+      "1','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',["
       "0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0."
       "411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 "
       "0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Con"
@@ -5014,6 +5014,9 @@ Stateflow {
     screen		    [1 1 3200 1200 1.25]
     treeNode		    [0 3 0 0]
     viewObj		    2
+    visible		    1
+    subviewS {
+    }
     ssIdHighWaterMark	    11
     decomposition	    CLUSTER_CHART
     updateMethod	    CONTINUOUS
@@ -5023,13 +5026,15 @@ Stateflow {
     saturateOnIntegerOverflow 1
     userSpecifiedStateTransitionExecutionOrder 1
     disableImplicitCasting  1
+    plantModelingInfo {
+    }
     actionLanguage	    2
     firstData		    4
     firstTransition	    9
   }
   state {
     id			    3
-    labelString		    "Moving\ndu:\np_dot = 2*v;\nv_dot = 0.003*u-0.005*cos(3*p);\np_out = p;\nv_out = v;"
+    labelString		    "Moving\ndu:\np_dot = v;\nv_dot = 0.0015*u-0.0025*cos(3*p);\np_out = p;\nv_out = v;"
     position		    [136 134 284 190]
     fontSize		    12
     chart		    2
