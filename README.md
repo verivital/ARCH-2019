@@ -12,11 +12,9 @@ https://github.com/souradeep-111/Neural-Network-Controller-Verification-Benchmar
 
 MATLAB R2018b 
 
-* Simulink
+[NNV](https://github.com/verivital/nnv) and its dependencies (for reachability analysis). One example for the ACC benchmarks is provided.
 
-* Stateflow
-
-* Deep Learning Toolbox
+Simulink and Stateflow to simulate the .slx files.
 
 ### Simulation files
 
@@ -31,11 +29,13 @@ In the main folder for each benchmark there is a dynamics.m file that contains t
 ### Controller files
 
 There are two types of files that contain the neural network information, "controller".mat and "controller".onnx. The first one is the 
-format used by NNV https://github.com/verivital/nnv, and the latter one correspond to the Open Neural Network Exchange format (ONNX) 
-https://github.com/onnx/onnx. 
+format used by [NNV](https://github.com/verivital/nnv), and the latter one correspond to the Open Neural Network Exchange format [ONNX](https://github.com/onnx/onnx). 
 
+### Reachability Example
 
-#### Author
+In the ACC subfolder, execute the reach.m script to generate Figure 3.1.
+
+#### Authors
 
 1. Diego Manzanas Lopez
 2. Patrick Musau
